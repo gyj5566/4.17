@@ -37,6 +37,9 @@ header{
         p{
             text-align: center;
             line-height: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         p:nth-child(2){
             color: green;

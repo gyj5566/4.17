@@ -110,6 +110,9 @@ header span.active {
 .main > div p {
   text-align: center;
   line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .main > div p:nth-child(2) {
