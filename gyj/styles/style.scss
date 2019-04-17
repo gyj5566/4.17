@@ -1,0 +1,45 @@
+@import "./commen.scss";
+.wrap{
+    background: #eee;
+}
+header{
+    @include display_flex(space-around,center);
+    background: #fff;
+    span.active{
+        color: blue
+    }
+}
+.main{
+    margin-top: rem(10px);
+    @include W;
+    flex: 1;
+    padding: 0 7vw;
+    background: #fff;
+    >div{
+        @include H(rem(100px));
+        margin: rem(10px) 0;
+        box-shadow: 2px 2px 2px #CCC,-2px -2px 2px #CCC;
+        border-radius: rem(5px);
+        overflow: hidden;
+        h2{
+            height: 50%;;
+            background: hotpink;
+            color: #fff;
+            font-weight: 600;
+            font-size: 30px;
+            span:first-child{
+                float: left;
+            }
+            span:last-child{
+                float: right;
+            }
+        }
+        p{
+            text-align: center;
+            line-height: 20px;
+        }
+        p:nth-child(2){
+            color: green;
+        }
+    }
+}
